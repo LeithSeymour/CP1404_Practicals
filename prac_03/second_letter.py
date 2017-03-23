@@ -2,6 +2,7 @@ def main():
     user_name = get_name()
     for_every = input("Enter integer to print every x number: ")
     check = for_every.isdigit()
+
     while not check:
         for_every = input("Enter integer to print every x number: ")
         check = for_every.isdigit()
