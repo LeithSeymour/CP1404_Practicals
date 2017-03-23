@@ -18,14 +18,14 @@ def return_score(score):
         print("Invalid")
         score = float(input("Enter new score: "))
     if score >= 90:
-        result = "Excellent"
+        category = "Excellent"
     elif score < 50:
-        result = "Bad"
+        category = "Bad"
     else:
-        result = "Passable"
-    return result
+        category = "Passable"
+    return category
 
 
-score = float(input("Enter score: "))
-result = return_score(score)
+user_input = float(input("Enter score: "))
+result = return_score(user_input)
 print(result)
