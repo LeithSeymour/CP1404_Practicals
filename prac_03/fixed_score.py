@@ -4,15 +4,6 @@ Broken program to determine score status
 """
 
 
-# if 100 >= score >= 90:
-#    print("Excellent")
-# elif 90 > score >= 50:
-#    print("Passable")
-# elif 50 > score > 0:
-#    print("Bad")
-# else:
-#    print("Invalid score")
-
 def return_score(score):
     while score > 100 or score < 0:
         print("Invalid")
