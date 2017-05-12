@@ -1,6 +1,4 @@
 class ProgrammingLanguage:
-
-
     def __init__(self, language, typing, reflection, year):
         self.name = language
         self.typing = typing
@@ -12,6 +10,6 @@ class ProgrammingLanguage:
                                                                              self.typing,
                                                                              self.reflection,
                                                                              self.year)
+
     def is_dynamic(self):
         return self.typing == "Dynamic"
-

@@ -5,6 +5,23 @@ class Guitar:
         self.cost = cost
 
     def __str__(self):
-        print("{} ({}) : ${}.00".format(self.name,
-                                        self.year,
-                                        self.cost))
+        return ("{} ({}) : ${}".format(self.name,
+                                       self.year,
+                                       self.cost))
+
+    def pretty_string(self):
+        return ("{:>20} ({}), worth ${:10,.2f} {}".format(
+            self.name,
+            self.year,
+            self.cost,
+            self.is_vintage()))
+
+    def get_age(self):
+        age = 2017 - self.year
+        return age
+
+    def is_vintage(self):
+        if self.get_age() > 50:
+            return "(vintage)"
+        else:
+            return ""
